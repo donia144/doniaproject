@@ -1,0 +1,152 @@
+<!DOCtype html>
+<html>
+<head>
+<title>css service box hover effects</title>
+<style>
+body{
+ margin:0;
+ padding:0;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ min-height:100vh;
+ font-family:'poppins',sans-serif;
+ background-image:url(img/pink.jpg);
+ background-repeat:no repeat;
+ background-siza:cover;
+}
+.container{
+ display:flex;
+ flex-warp:warp;
+ justify-content:space-between;
+}
+.container.box{
+ position:ralative;
+ width:350px;
+ padding:40px;
+ background:#fff;
+ box-shadow:0 5px 15px rgba(0,0,0,.1);
+ border-radius:4px;
+ margin:20px;
+ box-sizing:border-box;
+ overflow:hidden;
+ text-align:center;
+}
+.container.box:before{
+ contnet:'';
+ width:50%;
+ height:100%;
+ position:absolute;
+ top:0;
+ left:0;
+ background:rgba(255,255,255,.2)
+ z-index:2;
+ pointer-events:none;
+}
+.container.box.icon{
+ position:relative;
+ width:80px;
+ height:80px; 
+ color:#fff;
+ background:#000;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ margin:0 auto;
+ border-radius:50%;
+ font-size:40px;
+ font-weight:700;
+ transition:1s;
+}
+.container.box:nth-child(1).icon{
+ box-shadow:0 0 0 0 #e91e63;
+ background: #e91e63;
+}
+.container.box:nth-child(1):hover.icon{
+ box-shadow:0 0 0 400px #e91e63;
+}
+.container.box:nth-child(2).icon{
+ box-shadow:0 0 0 0 #23e629;
+ background: #23e629;
+}
+.container.box:nth-child(2):hover.icon
+ box-shadow:0 0 0 400px #23e629;
+}
+.container.box:nth-child(3).icon{
+ box-shadow:0 0 0 0 #2196f3;
+ background:#2196f3;
+}
+.container.box:nth-child(3):hover.icon{
+ box-shadow:0 0 0 400px #2196f3;
+}
+.container.box.content{
+ position:relative;
+ z-index:1;
+ transition:0.5s
+}
+.container.box:hover.content{
+ color:#fff;
+}
+.container.box.content h3{
+ font-size:20px;
+ margin:10px 0;
+ padding:0;
+}
+.container.box.content p{
+ margin:0;
+ padding:0;
+}
+a{
+ display:inline-block;
+ padding:10px 20px;
+ background:#fff;
+ border-radius:4px;
+ text-decoration:none;
+ color:#000;
+ font-weight:500;
+ margin-top:20px;
+ box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="container">
+ <div class="box">
+ <div class="icon">01</div>
+ <div class="content"> 
+ <h3>service name</h3>
+<p>“Fashion as a service” is how the fashion industry adapting ,new customer trends,
+ while putting the customer at the center, not the product. Rental business model respond 
+to a need of access (and continuous freshness) while increasing product lifespan and therefore 
+reaching out one of the objectives of circular economy.</p>
+<a href="#">read more</a>
+</div>
+</div>
+ <div class="box">
+ <div class="icon">02</div>
+ <div class="content"> 
+ <h3>service name</h3>
+<p>“Fashion designers may work full-time for one fashion house',
+which owns the designs, or they work alone or as part of a team
+for themselves, selling their designs to fashion houses, 
+under which designs are marketed. Some fashion designers. </p>
+<a href="#">read more</a>
+</div>
+</div>
+ <div class="box">
+ <div class="icon">03</div>
+ <div class="content"> 
+ <h3>service name</h3>
+<p>“Product Launch ConsultationDevelop and execute strategy for startup or accessory 
+brand expansion including consumer profile, pricepoint targets, product assortment and 
+launch strategy,Brand AnalysisIn-depth research of client's brand perspective and 
+Submit report, compile media presentation or personally</p>
+<a href="#">read more</a>
+</div>
+</div>
+</body>
+</html>
+
+
+
